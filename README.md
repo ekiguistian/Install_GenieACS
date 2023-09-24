@@ -1,0 +1,1 @@
+# install genieACS di ubuntu server 22.04
