@@ -1,6 +1,7 @@
 - type: "'tags'"
 - type: "'ping'"
 - type: "'parameter-list'"
+
   parameters:
     - element: "'span.inform'"
       label: "'Last inform'"
