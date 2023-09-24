@@ -1,0 +1,40 @@
+- label: "'Serial number'"
+  parameter: Device.DeviceInfo.SerialNumber
+  type: "'device-link'"
+  components:
+    - type: "'parameter'"
+- label: "'Identity'"
+  parameter: Device.DeviceInfo.X_MIKROTIK_SystemIdentity
+- label: "'Class'"
+  parameter: Device.DeviceInfo.ProductClass
+- label: "'Model'"
+  parameter: Device.DeviceInfo.ModelName
+- label: "'ROS'"
+  parameter: Device.DeviceInfo.SoftwareVersion
+- label: "'Uptime'"
+  parameter: Device.DeviceInfo.UpTime
+- label: "'Ether1 MAC'"
+  parameter: Device.Ethernet.Interface.1.MACAddress
+- label: "'DHCP Client IP'"
+  parameter: Device.DHCPv4.Client.1.IPAddress
+- label: "'IP'"
+  parameter: Device.IP.Interface.1.IPv4Address.1.IPAddress
+- label: "'WiFi 1'"
+  parameter: Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries
+- label: "'WiFi 2'"
+  parameter: Device.WiFi.AccessPoint.2.AssociatedDeviceNumberOfEntries
+- label: "'DHCP'"
+  parameter: Device.Hosts.HostNumberOfEntries
+- element: "'span.inform'"
+  label: "'Last inform'"
+  parameter: DATE_STRING(Events.Inform)
+  type: "'container'"
+  components:
+    - type: "'parameter'"
+    - chart: "'online'"
+      type: "'overview-dot'"
+- label: "'Tags'"
+  parameter: Tags
+  type: "'tags'"
+  unsortable: true
+  writable: false
